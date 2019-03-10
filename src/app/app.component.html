@@ -5,7 +5,7 @@
       <div class="card-body" *ngFor="let g of groupKeys[i]">
         <!--<h5 class="card-title">Car Info</h5>-->
         <div *ngFor="let car of carGroups[i][g]">
-            <p class="card-text text-success">{{car.make}} | {{car.model}}</p>
+            <p class="card-text text-success"><span> {{ car.make }} </span> | {{ car.model }}</p>
         </div>
         <!--<p class="card-text text-success">Make: {{carGroups[i][g].make}} | Model: {{carGroups[i][g].model}}</p>-->
       </div>
